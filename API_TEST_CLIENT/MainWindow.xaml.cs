@@ -44,7 +44,11 @@ namespace API_TEST_CLIENT
             dataGrid.ItemsSource = json;
         }
 
-
+        /// <summary>
+        /// Комментарий для Session2
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void reloadButton_Click(object sender, RoutedEventArgs e)
         {
             HttpClient client = new HttpClient();
