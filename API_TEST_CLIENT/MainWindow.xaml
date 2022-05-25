@@ -1,0 +1,25 @@
+﻿<Window x:Class="API_TEST_CLIENT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:API_TEST_CLIENT"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="yearTextBox" Height="50"></TextBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                <Button x:Name="reloadButton" Content="Обновить" Height="50" Click="reloadButton_Click"></Button>
+                <Button x:Name="deleteButton" Content="Удалить" Height="50" Click="deleteButton_Click"></Button>
+                <Button x:Name="putButton" Content="Изменить" Height="50" Click="putButton_Click"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <DataGrid x:Name="dataGrid" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="500" Height="300"></DataGrid>
+                <Image x:Name="animeCoverImage" Width="200" Margin="10,0,0,0"></Image>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
